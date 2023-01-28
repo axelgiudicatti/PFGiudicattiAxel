@@ -52,7 +52,7 @@ h2 {
 }
 
 .header__logo {
-  width: 10vw;
+  width: 13vw;
 }
 .navbar {
   padding-right: 5%;
@@ -125,6 +125,7 @@ h2 {
   }
   .-description {
     text-shadow: black;
+    width: 60vw;
   }
   .-img {
     width: 28vw;
