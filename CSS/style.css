@@ -98,7 +98,7 @@ h2 {
 }
 
 .card:hover {
-  transform: scale(1.25);
+  transform: scale(1.13);
   transition-duration: 800ms;
 }
 
@@ -241,6 +241,7 @@ select {
   background-image: url(../imgs/footer.jpg);
   background-size: cover;
   margin-top: 10vh;
+  height: 40rem;
 }
 
 .footerLogo__image {
