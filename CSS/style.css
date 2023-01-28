@@ -28,7 +28,7 @@ ul {
 h1 {
   text-align: center;
   font-size: 2rem;
-  padding: 10vh;
+  padding: 5%;
   color: black;
   text-shadow: #6494aa;
   background-color: #adbf97;
@@ -66,7 +66,6 @@ h2 {
 .-proceso {
   color: black;
   font-weight: bold;
-  /*background-color: #6494aa;*/
 }
 .nav-link:hover {
   background-color: #6494aa;
@@ -84,6 +83,23 @@ h2 {
 
 .carousel {
   opacity: 0.85;
+}
+
+/*                                               INDEX                                                      */
+.carousel {
+  margin-bottom: 5%;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  transform: scale(1.25);
+  transition-duration: 800ms;
 }
 
 /*                                             NOSOTROS                                              */
