@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punta Y Hacha Brewing-NUESTRO ARTE</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- FONTAWESOME -->
     <link
       rel="stylesheet"
@@ -22,36 +28,97 @@
   </head>
   <body>
     <header>
-      <div class="parallax proceso-img-uno">
-        <div class="header">
-          <a href="../index.html"
-            ><img class="header__logo" src="../imgs/logo face.png" alt=""
-          /></a>
-          <ul class="headerNavlist">
-            <li>
-              <a class="headerNavlist__link" href="../index.html"> HOME</a>
-            </li>
-            <li>
-              <a class="headerNavlist__link" href="nosotros.html">
-                Quienes somos</a
-              >
-            </li>
-            <li>
-              <a class="headerNavlist__link" href="cervezas.html">
-                Nuestras cervezas</a
-              >
-            </li>
-            <li>
-              <a class="headerNavlist__link" href="proceso.html">
-                Nuestro proceso
-              </a>
-            </li>
-          </ul>
-        </div>
-        <h2 class="texto-int">Molienda</h2>
+      <div class="parallax procesogeneral">
+        <!-- NAV BAR  -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"
+              ><img class="header__logo" src="../imgs/logo face.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link -proceso" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link -proceso" href="../pages/nosotros.html"
+                    >Quienes somos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link -proceso" href="../pages/cervezas.html"
+                    >Nuestras cervezas</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link -proceso" href="../pages/proceso.html"
+                    >Nuestro proceso</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle -proceso"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Ayuda
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="../pages/contact.html"
+                        >CONTACTO</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../pages/faq.html">FAQ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h2 class="texto-int">Nuestro proceso</h2>
       </div>
     </header>
     <main>
+      <!-- .parallax -->
+      <div class="container">
+        <p>
+          En Punta y Hacha nos caracterizamos por la calidad de nuestra materia
+          prima y la naturalidad del proceso productivo. Nuestras cervezas son
+          puramente elaboradas a base de malta y no utilizamos conservantes en
+          ninguna etapa de nuestro proceso de producción. Utilizamos diferentes
+          variedades de lúpulos europeos y americanos y los combinamos entre sí
+          para brindarte cervezas aromáticas y completamente balanceadas. Cada
+          una de nuestras cervezas está cuidadosamente pensada y diseñada por
+          nuestro Bewmaster, ajustando cada paso del proceso productivo a fin de
+          resaltar las caracteristicas de la misma.
+        </p>
+        <p>
+          Asimismo, el nivel de molienda del grano de cebada es otra
+          característica a tener en cuenta en la elaboración de grandes
+          cervezas. En Punta y Hacha® cuidamos cada uno de estos detalles para
+          llevarte la mejor cerveza.
+        </p>
+      </div>
+
+      <div class="parallax proceso-img-uno">
+        <h2 class="texto-int">Molienda</h2>
+      </div>
       <!-- .parallax -->
       <div class="container">
         <p>
@@ -69,8 +136,6 @@
           llevarte la mejor cerveza.
         </p>
       </div>
-      <!-- .texto -->
-
       <div class="parallax proceso-img-dos">
         <h2 class="texto-int">Macerado</h2>
       </div>
@@ -82,19 +147,17 @@
           parte del «flavor» de la cerveza. Es un proceso relativamente sencillo
           en el cual la malta se pone en remojo durante un tiempo controlado y
           luego mediante filtración se obtiene el mosto.
-        </p>
-        <p>
+          <br />
+          <br />
           Sin embargo, se deben respetar y controlar siempre las combinaciones
           tiempo-temperatura en los diferentes steps del remojo (macerado).
           Diferencias en los tiempos o temperaturas de maceración, darán origen
           a diferentes perfiles de mosto que luego impactarán sobre el
           metabolismo de las levaduras fermentadoras, y finalmente, en los
           sabores de nuestra cerveza. Un error en el macerado puede generar
-          aromas o sabores indeseados en nuestra cerveza (off-flavors).
-        </p>
-        <p>
-          El macerado es el primer paso determinante en la elaboración de una
-          buena cerveza.
+          aromas o sabores indeseados en nuestra cerveza (off-flavors). El
+          macerado es el primer paso determinante en la elaboración de una buena
+          cerveza.
         </p>
         <p>
           En Punta y Hacha® usamos un diseño de macerado escalonado donde cada
@@ -249,5 +312,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
