@@ -92,122 +92,154 @@
       </nav>
     </header>
     <main>
-      <section class="contact">
+      <section>
         <h1>Te escuchamos!</h1>
-        <form action="">
-          <fieldset>
-            <div>
-              <div>
-                <input
-                  type="text"
-                  name="nombreapellido"
-                  id="nombreapellido"
-                  placeholder="Tu Nombre y Apellido "
-                />
+        <div class="contact">
+          <form action="">
+            <fieldset>
+              <div class="form">
+                <div>
+                  <input
+                    type="text"
+                    name="nombreapellido"
+                    id="nombreapellido"
+                    placeholder="Tu Nombre y Apellido "
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Tu E-mail"
+                  />
+                </div>
+                <div clas="radio">
+                  <label for=""> Sexo:</label>
+                  <label for=""> Hombre</label>
+                  <input type="radio" name="sexo" value="hombre" />
+                  <label for=""> Mujer</label>
+                  <input type="radio" name="sexo" />
+                  <label for=""> Prefiero no decirlo</label>
+                  <input type="radio" name="sexo" />
+                </div>
+                <div>
+                  <label for="litros">
+                    Cuántos litros de cerveza consumís al mes ?</label
+                  >
+                  <select name="litros" id="litros">
+                    <option value="0-20">Entre 0 y 20 litros</option>
+                    <option value="21-40">Entre 21 y 40 litros</option>
+                    <option value="41-60">Entre 41 y 60 litros</option>
+                    <option value="60+">Más de 60 litros</option>
+                  </select>
+                </div>
+                <div>
+                  <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    cols="30"
+                    rows="10"
+                    placeholder="Deje aqui su mensaje"
+                  ></textarea>
+                </div>
+                <div>
+                  <input
+                    class="button button--state-ok"
+                    type="submit"
+                    value="Enviar"
+                  />
+                  <input
+                    class="button button--state-bad"
+                    type="reset"
+                    value=" Borrar todo"
+                  />
+                </div>
+                <div class="terms">
+                  <label for=""> Acepto los terminos y condiciones</label>
+                  <input type="checkbox" name="acepta" id="acepta" value="1" />
+                </div>
               </div>
-              <div>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Tu E-mail"
-                />
-              </div>
-              <div>
-                <label for=""> Sexo:</label>
-                <label for=""> Hombre</label>
-                <input type="radio" name="sexo" value="hombre" />
-                <label for=""> Mujer</label>
-                <input type="radio" name="sexo" />
-                <label for=""> Prefiero no decirlo</label>
-                <input type="radio" name="sexo" />
-              </div>
-              <div>
-                <label for="litros">
-                  Cuántos litros de cerveza consumís al mes ?</label
-                >
-                <select name="litros" id="litros">
-                  <option value="0-20">Entre 0 y 20 litros</option>
-                  <option value="21-40">Entre 21 y 40 litros</option>
-                  <option value="41-60">Entre 41 y 60 litros</option>
-                  <option value="60+">Más de 60 litros</option>
-                </select>
-              </div>
-              <div>
-                <textarea
-                  name="mensaje"
-                  id="mensaje"
-                  cols="30"
-                  rows="10"
-                  placeholder="Deje aqui su mensaje"
-                ></textarea>
-              </div>
-              <div>
-                <input
-                  class="button button--state-ok"
-                  type="submit"
-                  value="Enviar"
-                />
-                <input
-                  class="button button--state-bad"
-                  type="reset"
-                  value=" Borrar todo"
-                />
-              </div>
-              <div>
-                <label for=""> Acepto los terminos y condiciones</label>
-                <input type="checkbox" name="acepta" id="acepta" value="1" />
-              </div>
+            </fieldset>
+          </form>
+        </div>
+        <!--                                   TARJETAS                                       -->
+        <div class="tarjetas">
+          <div class="card text-bg-light mb-3" style="width: 20rem">
+            <img src="../imgs/maps.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Visitanos!</h5>
+              <p class="card-text">
+                Encontranos en la localidad de Esperanza, Santa Fe
+              </p>
+              <a
+                href="https://goo.gl/maps/vsMXiivhVJW7Gy9E8"
+                target="_blank"
+                class="btn btn-dark"
+                >Cómo llegar?</a
+              >
             </div>
-          </fieldset>
-        </form>
+          </div>
+          <div class="card text-bg-success mb-3" style="width: 20rem">
+            <img src="../imgs/wpp.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Whatsappeanos!</h5>
+              <p class="card-text">De lunes a viernes de 10 a 20 hs.</p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=543496576119&text&type=phone_number&app_absent=0"
+                target="_blank"
+                class="btn btn-light"
+                >Escribinos!</a
+              >
+            </div>
+          </div>
+          <div class="card text-bg-danger mb-3" style="width: 20rem">
+            <img src="../imgs/insta.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Encontranos en Instagram!</h5>
+              <p class="card-text">
+                Y mantenete al tanto de todas nuestras novedades.
+              </p>
+              <a
+                href="https://www.instagram.com/puntayhachabrewing/"
+                target="_blank"
+                class="btn btn-dark"
+                >Seguinos!</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="footer --fbackground">
+      <div class="footer">
         <ul class="footerNavlist">
           <li>
-            <a class="footerNavlist__link --oscuro" href="../index.html">
-              HOME</a
-            >
+            <a class="footerNavlist__link" href="../index.html"> HOME</a>
           </li>
           <li>
-            <a
-              class="footerNavlist__link --oscuro"
-              href="../pages/nosotros.html"
-            >
+            <a class="footerNavlist__link" href="../pages/nosotros.html">
               Quienes somos</a
             >
           </li>
           <li>
-            <a
-              class="footerNavlist__link --oscuro"
-              href="../pages/cervezas.html"
-            >
+            <a class="footerNavlist__link" href="../pages/cervezas.html">
               Nuestras cervezas</a
             >
           </li>
           <li>
-            <a
-              class="footerNavlist__link --oscuro"
-              href="../pages/proceso.html"
-            >
+            <a class="footerNavlist__link" href="../pages/proceso.html">
               NUESTRO PROCESO</a
             >
           </li>
 
           <li>
-            <a
-              class="footerNavlist__link --oscuro"
-              href="../pages/contact.html"
-            >
+            <a class="footerNavlist__link" href="../pages/contact.html">
               CONTACT US</a
             >
           </li>
           <li>
-            <a class="footerNavlist__link --oscuro" href="../pages/faq.html">
-              FAQ</a
-            >
+            <a class="footerNavlist__link" href="../pages/faq.html"> FAQ</a>
           </li>
         </ul>
         <div class="footerLogo">
@@ -220,18 +252,21 @@
             id="fb"
             class="footerSocial__link"
             href="https://www.facebook.com/PuntayHachaBrewing"
+            target="_blank"
             ><i class="fab fa-facebook"></i
           ></a>
           <a
             id="insta"
             class="footerSocial__link"
             href="https://www.instagram.com/puntayhachabrewing/"
+            target="_blank"
             ><i class="fab fa-instagram"></i
           ></a>
           <a
             id="wpp"
             class="footerSocial__link"
             href="https://api.whatsapp.com/send/?phone=543496576119&text&type=phone_number&app_absent=0"
+            target="_blank"
             ><i class="fab fa-whatsapp"></i
           ></a>
         </div>

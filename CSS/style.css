@@ -28,7 +28,7 @@ ul {
 h1 {
   text-align: center;
   font-size: 2rem;
-  padding: 5%;
+  padding: 3%;
   color: black;
   text-shadow: #6494aa;
   background-color: #adbf97;
@@ -81,13 +81,10 @@ h2 {
   color: white;
 }
 
-.carousel {
-  opacity: 0.85;
-}
-
 /*                                               INDEX                                                      */
 .carousel {
   margin-bottom: 5%;
+  opacity: 0.85;
 }
 
 .tarjetas {
@@ -95,6 +92,7 @@ h2 {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 4%;
 }
 
 .card:hover {
@@ -163,33 +161,36 @@ h2 {
 
 /*                                                CONTACT                                               */
 
-fieldset {
+.form {
   border: none;
   line-height: 2.2rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
-
+.contact {
+  background-color: #9dc4b5;
+  margin-bottom: 3%;
+  padding-top: 2%;
+}
 input {
   border-radius: 2rem;
   font-family: "Quicksand";
   margin: 0.4rem;
 }
-
 input[type="text"] {
   border: 0.6rem solid;
   border-color: #a63d40;
   background-color: #a63d40;
   color: white;
-  padding: 0.3rem;
-  width: 95%;
+  width: 90%;
 }
 input[type="text"]::placeholder {
   color: white;
 }
 textarea {
-  width: 50vw;
+  width: 90%;
   font-family: "Quicksand";
   color: #2f3e46;
 }
@@ -204,16 +205,19 @@ select {
   text-align: center;
   color: white;
   padding: 0.25rem;
-  margin: 0.3rem;
-  width: 50%;
+  width: 70%;
 }
 
+.terms {
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
 .button {
   border: none;
   color: white;
   border-radius: 2rem;
   padding: 0.6rem 1rem;
-  width: 25vw;
+  width: 45%;
 }
 .button:hover {
   opacity: 0.85;
@@ -226,26 +230,45 @@ select {
   background-color: #900a16;
 }
 
+@media screen and (min-width: 768px) {
+  select {
+    width: 30%;
+  }
+  textarea {
+    width: 65%;
+  }
+  input[type="text"] {
+    width: 50%;
+  }
+  .button {
+    width: 30%;
+  }
+}
+
 /*                                                     FOOTER                                     */
 
 .footer {
-  height: 45rem;
+  height: 40rem;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-right: 1%;
-}
-
-.--fbackground {
+  justify-content: space-around;
+  align-items: center;
   background-image: url(../imgs/footer.jpg);
   background-size: cover;
-  margin-top: 10vh;
-  height: 40rem;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+}
 .footerLogo__image {
-  height: 25vh;
+  height: 20vh;
 }
 
 .footerNavlist__link {
@@ -253,6 +276,7 @@ select {
   text-decoration: none;
   font-weight: bold;
   opacity: 0.7;
+  color: black;
   text-transform: uppercase;
 }
 .footerNavlist__link:hover {
@@ -261,9 +285,10 @@ select {
 }
 .footerSocial {
   font-size: 350%;
+  padding-right: 1%;
 }
 .footerSocial__link {
-  color: white;
+  color: black;
   opacity: 0.7;
 }
 #wpp:hover {
@@ -280,13 +305,6 @@ select {
   color: #2325a1;
   opacity: 1;
   transition-duration: 700ms;
-}
-
-.--claro {
-  color: white;
-}
-.--oscuro {
-  color: black;
 }
 
 /*                                                          PARALLAX */
@@ -334,13 +352,10 @@ select {
   background-image: url("../imgs/oatmeal.jpg");
 }
 
-.estilos-img-seis {
-  background-image: url("../imgs/pintas.jpg");
-}
-
 .procesogeneral {
   background-image: url("../imgs/proceso.png");
 }
+
 .proceso-img-uno {
   background-image: url("../imgs/molienda.jpg");
 }
@@ -359,8 +374,4 @@ select {
 
 .proceso-img-cinco {
   background-image: url("../imgs/envasado.jpg");
-}
-
-.proceso-img-seis {
-  background-image: url("../imgs/pintas.jpg");
 }
