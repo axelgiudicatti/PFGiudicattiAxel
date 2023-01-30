@@ -45,8 +45,10 @@ h2 {
 
 /*                                             HEADER                                                        */
 
-.header {
+.header,
+.dropdown-menu {
   background-color: #70a288;
+  color: white;
 }
 
 .header__logo {
@@ -74,17 +76,20 @@ h2 {
   transition-duration: 700ms;
   transform: scale(1.1);
 }
-.dropdown-menu {
-  background-color: #93a392;
-  color: white;
-}
 .dropdown-item {
   color: white;
+  font-size: 1.2rem;
+}
+.dropdown-item:hover {
+  color: white;
+  border-radius: 10px;
+  background-color: #476c9b;
+  transition-duration: 700ms;
 }
 
 /*                                               INDEX                                                      */
 .carousel {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .tarjetas {
@@ -112,6 +117,7 @@ h2 {
   margin-right: auto;
   display: block;
 }
+/* media query*/
 @media screen and (min-width: 768px) {
   .axel,
   .lola,
@@ -232,7 +238,7 @@ select {
 .button--state-bad {
   background-color: #984447;
 }
-
+/* media query*/
 @media screen and (min-width: 768px) {
   select {
     width: 25%;
@@ -268,7 +274,7 @@ select {
   background-image: url(../imgs/footer.jpg);
   background-size: cover;
 }
-
+/* media query*/
 @media screen and (min-width: 768px) {
   .footer {
     justify-content: space-between;
@@ -302,20 +308,20 @@ select {
   color: black;
   opacity: 0.7;
 }
-#wpp:hover {
-  color: #087e2f;
+#wpp:hover,
+#insta:hover,
+#fb:hover {
   opacity: 1;
   transition-duration: 700ms;
+}
+#wpp:hover {
+  color: #087e2f;
 }
 #insta:hover {
   color: #b81d72;
-  opacity: 1;
-  transition-duration: 700ms;
 }
 #fb:hover {
   color: #2325a1;
-  opacity: 1;
-  transition-duration: 700ms;
 }
 
 /*                                                          PARALLAX */
