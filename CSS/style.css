@@ -8,6 +8,13 @@ body {
   line-height: 1.5;
 }
 
+.bg--green {
+  background-color: #4daa57;
+}
+
+.bg--blue {
+}
+
 img {
   max-width: 100%;
 }
@@ -248,11 +255,15 @@ select {
   opacity: 0.85;
   transition-duration: 700ms;
 }
-.button--state-ok {
+.color--state-ok {
   background-color: #4daa57;
 }
-.button--state-bad {
+.color--state-bad {
   background-color: #984447;
+}
+
+.color--state-blue {
+  background-color: #476c9b;
 }
 /* media query*/
 @media screen and (min-width: 768px) {
@@ -283,10 +294,10 @@ select {
 .footer {
   height: 40rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   background-image: url(../imgs/footer.jpg);
   background-size: cover;
 }
