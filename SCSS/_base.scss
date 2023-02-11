@@ -1,0 +1,44 @@
+/*                                                  RESET/GENERAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5%;
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+h1 {
+  @include textstyle(2rem, black, null, null);
+  text-align: center;
+  padding: 3%;
+  text-shadow: #6494aa;
+  background-color: #89ce94;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin: 0 0 15px 0;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

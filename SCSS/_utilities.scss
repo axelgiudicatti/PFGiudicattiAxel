@@ -1,0 +1,54 @@
+$badred: #984447;
+$pastelblue: #476c9b;
+$okgreen: #4daa57;
+$wppgreen: #087e2f;
+$instared: #b81d72;
+$faceblue: #2325a1;
+$headercolor: #70a288;
+$cardcolor: #75b09c;
+$contactcolor: #a0ca92;
+$textarea: #2f3e46;
+
+$redes: (
+  fb: $faceblue,
+  wpp: $wppgreen,
+  insta: $instared,
+);
+
+$paraestilos: (
+  uno: url("../imgs/estilos.jpg"),
+  dos: url("../imgs/ipa.jpg"),
+  tres: url("../imgs/irish.jpg"),
+  cuatro: url("../imgs/golden.jpg"),
+  cinco: url("../imgs/oatmeal.jpg"),
+);
+
+$paraprocesos: (
+  procesogeneral: url("../imgs/proceso.png"),
+  uno: url("../imgs/molienda.jpg"),
+  dos: url("../imgs/macerado.jpg"),
+  tres: url("../imgs/hervor.jpg"),
+  cuatro: url("../imgs/fermentacion.jpg"),
+  cinco: url("../imgs/envasado.jpg"),
+);
+
+@mixin hoverr($opac, $escala) {
+  opacity: $opac;
+  transition-duration: 700ms;
+  transform: scale($escala);
+}
+
+@mixin dflex($dir, $just, $align) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin textstyle($size, $color, $decoration, $transform) {
+  font-size: $size;
+  color: $color;
+  text-decoration: $decoration;
+  text-transform: $transform;
+}

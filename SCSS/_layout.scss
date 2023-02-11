@@ -1,0 +1,84 @@
+/*                                                 HEADER                                                        */
+
+.header {
+  background-color: $headercolor;
+  color: white;
+}
+.dropdown-menu {
+  @extend .header;
+}
+
+.header__logo {
+  width: 13vw;
+}
+.navbar {
+  padding-right: 5%;
+}
+.nav-link {
+  @include textstyle(1.2rem, white, null, uppercase);
+  border-radius: 10px;
+  padding: 8px 12px 8px 12px;
+  margin: 6px;
+  &:hover {
+    background-color: $pastelblue;
+    color: white;
+    @include hoverr(1, 1.1);
+  }
+}
+.-proceso {
+  color: black;
+  font-weight: bold;
+}
+.dropdown-item {
+  @include textstyle(1.2rem, white, null, null);
+  &:hover {
+    background-color: $pastelblue;
+    color: white;
+    @include hoverr(1, 1.1);
+    border-radius: 10px;
+  }
+}
+
+/*                                                          FOOTER                                     */
+
+.footer {
+  height: 40rem;
+  @include dflex(column-reverse, space-around, null);
+  background-image: url(../imgs/footer.jpg);
+  background-size: cover;
+}
+/*             media query*/
+@media screen and (min-width: 768px) {
+  .footer {
+    @include dflex(row, space-between, flex-end);
+  }
+}
+.footerLogo__image {
+  height: 20vh;
+}
+
+.footerNavlist__link {
+  @include textstyle(1.6rem, black, none, uppercase);
+  font-weight: bold;
+  opacity: 0.7;
+  &:hover {
+    @include hoverr(1, 1);
+  }
+}
+.footerSocial {
+  font-size: 350%;
+  padding-right: 1%;
+}
+.footerSocial__link {
+  color: black;
+  opacity: 0.7;
+}
+
+@each $red, $color in $redes {
+  ##{$red} {
+    &:hover {
+      @include hoverr(1, 1);
+      color: $color;
+    }
+  }
+}

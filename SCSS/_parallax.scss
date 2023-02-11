@@ -1,0 +1,36 @@
+/*                                                          PARALLAX */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45rem;
+  max-width: 100%;
+  position: relative;
+}
+.texto-int {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 25%;
+}
+.parallax h2 {
+  font-size: 3.8rem;
+}
+.parallax h3 {
+  font-size: 3rem;
+}
+
+@each $paraestilo, $url in $paraestilos {
+  .estilos-img-#{$paraestilo} {
+    background-image: $url;
+  }
+}
+
+@each $paraproceso, $url in $paraprocesos {
+  .proceso-img-#{$paraproceso} {
+    background-image: $url;
+  }
+}
