@@ -7,8 +7,7 @@
   @include dflex(row, space-evenly, center);
   margin-bottom: 4%;
   background-color: $cardcolor;
-  padding-top: 4%;
-  padding-bottom: 2%;
+  padding: 4% 0% 2% 0%;
 }
 
 .card {
@@ -26,16 +25,15 @@
 
 .axel {
   @extend .-description;
-  background-color: #84bcda;
+  background-color: $axel;
 }
 .luisi {
   @extend .-description;
-  background-color: #dab785;
-  flex-direction: row-reverse;
+  background-color: $luisi;
 }
 .lola {
   @extend .-description;
-  background-color: #e2eb98;
+  background-color: $lola;
 }
 
 .-img {
@@ -46,13 +44,11 @@
   .axel,
   .lola {
     @include dflex(row, space-evenly, center);
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0px 20px 0px;
   }
   .luisi {
     @include dflex(row-reverse, space-evenly, center);
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0px 20px 0px;
   }
   .-box {
     text-shadow: black;
@@ -78,9 +74,8 @@
   justify-items: stretch;
   align-items: stretch;
   align-content: center;
-  background-color: #75b09c;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  background-color: $cardcolor;
+  padding: 40px 0px 40px 0px;
   img {
     width: 31vw;
     border-radius: 3%;
@@ -102,8 +97,7 @@
 }
 .contact {
   background-color: $contactcolor;
-  padding-bottom: 3%;
-  padding-top: 2%;
+  padding: 2% 0% 3% 0%;
 }
 input {
   border-radius: 2rem;
