@@ -185,6 +185,10 @@ h2 {
   background-color: #75b09c;
   padding: 4% 0% 2% 0%;
 }
+.tarjetas h2 {
+  font-size: 1.6rem;
+  text-align: start;
+}
 
 .card:hover {
   opacity: 1;

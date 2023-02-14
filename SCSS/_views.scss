@@ -8,8 +8,10 @@
   margin-bottom: 4%;
   background-color: $cardcolor;
   padding: 4% 0% 2% 0%;
+  h2 {
+    @include textstyle(1.6rem, null, null, null, start);
+  }
 }
-
 .card {
   &:hover {
     @include hoverr(1, 1.13);
