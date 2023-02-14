@@ -107,7 +107,7 @@ h2 {
   flex-wrap: wrap;
   flex-direction: column-reverse;
   justify-content: space-around;
-  background-image: url(../imgs/footer.jpg);
+  background-image: url(../imgs/footer.webp);
   background-size: cover;
 }
 
@@ -294,16 +294,14 @@ input {
   font-family: "Quicksand";
   margin: 0.4rem;
 }
-
-input[type=text] {
+input [type=text] {
   border: 0.6rem solid;
   border-color: #476c9b;
   background-color: #476c9b;
   color: white;
   width: 90%;
 }
-
-input[type=text]::placeholder {
+input [type=text]::placeholder {
   color: white;
 }
 
@@ -321,8 +319,8 @@ select {
   background-color: #476c9b;
   border-radius: 1rem;
   border: 1rem;
-  text-align: center;
   color: white;
+  text-align: center;
   padding: 0.25rem;
   width: 70%;
 }
@@ -394,8 +392,8 @@ select {
 }
 
 .texto-int {
-  color: #fff;
   font-weight: bold;
+  color: #fff;
   text-align: center;
   position: relative;
   top: 25%;
@@ -414,43 +412,43 @@ select {
 }
 
 .estilos-img-dos {
-  background-image: url("../imgs/ipa.jpg");
+  background-image: url("../imgs/ipa.webp");
 }
 
 .estilos-img-tres {
-  background-image: url("../imgs/irish.jpg");
+  background-image: url("../imgs/irish.webp");
 }
 
 .estilos-img-cuatro {
-  background-image: url("../imgs/golden.jpg");
+  background-image: url("../imgs/golden.webp");
 }
 
 .estilos-img-cinco {
-  background-image: url("../imgs/oatmeal.jpg");
+  background-image: url("../imgs/oatmeal.webp");
 }
 
 .proceso-img-procesogeneral {
-  background-image: url("../imgs/proceso.png");
+  background-image: url("../imgs/proceso.webp");
 }
 
 .proceso-img-uno {
-  background-image: url("../imgs/molienda.jpg");
+  background-image: url("../imgs/molienda.webp");
 }
 
 .proceso-img-dos {
-  background-image: url("../imgs/macerado.jpg");
+  background-image: url("../imgs/macerado.webp");
 }
 
 .proceso-img-tres {
-  background-image: url("../imgs/hervor.jpg");
+  background-image: url("../imgs/hervor.webp");
 }
 
 .proceso-img-cuatro {
-  background-image: url("../imgs/fermentacion.jpg");
+  background-image: url("../imgs/fermentacion.webp");
 }
 
 .proceso-img-cinco {
-  background-image: url("../imgs/envasado.jpg");
+  background-image: url("../imgs/envasado.webp");
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,9 +10,8 @@
   position: relative;
 }
 .texto-int {
-  color: #fff;
   font-weight: bold;
-  text-align: center;
+  @include textstyle(null, #fff, null, null, center);
   position: relative;
   top: 25%;
 }

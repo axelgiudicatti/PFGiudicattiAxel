@@ -28,8 +28,7 @@ ul {
 }
 
 h1 {
-  @include textstyle(2rem, black, null, null);
-  text-align: center;
+  @include textstyle(2rem, black, null, null, center);
   padding: 3%;
   text-shadow: #6494aa;
   background-color: $h1back;

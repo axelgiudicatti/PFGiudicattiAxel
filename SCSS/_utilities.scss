@@ -21,19 +21,19 @@ $redes: (
 
 $paraestilos: (
   uno: url("../imgs/estilos.webp"),
-  dos: url("../imgs/ipa.jpg"),
-  tres: url("../imgs/irish.jpg"),
-  cuatro: url("../imgs/golden.jpg"),
-  cinco: url("../imgs/oatmeal.jpg"),
+  dos: url("../imgs/ipa.webp"),
+  tres: url("../imgs/irish.webp"),
+  cuatro: url("../imgs/golden.webp"),
+  cinco: url("../imgs/oatmeal.webp"),
 );
 
 $paraprocesos: (
-  procesogeneral: url("../imgs/proceso.png"),
-  uno: url("../imgs/molienda.jpg"),
-  dos: url("../imgs/macerado.jpg"),
-  tres: url("../imgs/hervor.jpg"),
-  cuatro: url("../imgs/fermentacion.jpg"),
-  cinco: url("../imgs/envasado.jpg"),
+  procesogeneral: url("../imgs/proceso.webp"),
+  uno: url("../imgs/molienda.webp"),
+  dos: url("../imgs/macerado.webp"),
+  tres: url("../imgs/hervor.webp"),
+  cuatro: url("../imgs/fermentacion.webp"),
+  cinco: url("../imgs/envasado.webp"),
 );
 
 @mixin hoverr($opac, $escala) {
@@ -50,9 +50,10 @@ $paraprocesos: (
   align-items: $align;
 }
 
-@mixin textstyle($size, $color, $decoration, $transform) {
+@mixin textstyle($size, $color, $decoration, $transform, $align) {
   font-size: $size;
   color: $color;
   text-decoration: $decoration;
   text-transform: $transform;
+  text-align: $align;
 }

@@ -16,7 +16,7 @@
   padding-right: 5%;
 }
 .nav-link {
-  @include textstyle(1.3rem, white, null, uppercase);
+  @include textstyle(1.3rem, white, null, uppercase, null);
   border-radius: 10px;
   padding: 8px 12px 8px 12px;
   margin: 6px;
@@ -31,7 +31,7 @@
   font-weight: bold;
 }
 .dropdown-item {
-  @include textstyle(1.2rem, white, null, null);
+  @include textstyle(1.2rem, white, null, null, null);
   &:hover {
     background-color: white;
     color: black;
@@ -45,7 +45,7 @@
 .footer {
   height: 40rem;
   @include dflex(column-reverse, space-around, null);
-  background-image: url(../imgs/footer.jpg);
+  background-image: url(../imgs/footer.webp);
   background-size: cover;
 }
 /*             media query*/
@@ -59,7 +59,7 @@
 }
 
 .footerNavlist__link {
-  @include textstyle(1.6rem, black, none, uppercase);
+  @include textstyle(1.6rem, black, none, uppercase, null);
   font-weight: bold;
   opacity: 0.7;
   &:hover {

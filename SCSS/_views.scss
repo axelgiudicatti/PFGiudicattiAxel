@@ -103,16 +103,16 @@ input {
   border-radius: 2rem;
   font-family: "Quicksand";
   margin: 0.4rem;
-}
-input[type="text"] {
-  border: 0.6rem solid;
-  border-color: $pastelblue;
-  background-color: $pastelblue;
-  color: white;
-  width: 90%;
-}
-input[type="text"]::placeholder {
-  color: white;
+  [type="text"] {
+    border: 0.6rem solid;
+    border-color: $pastelblue;
+    background-color: $pastelblue;
+    color: white;
+    width: 90%;
+    &::placeholder {
+      color: white;
+    }
+  }
 }
 textarea {
   width: 90%;
@@ -127,8 +127,7 @@ select {
   background-color: $pastelblue;
   border-radius: 1rem;
   border: 1rem;
-  text-align: center;
-  color: white;
+  @include textstyle(null, white, null, null, center);
   padding: 0.25rem;
   width: 70%;
 }
@@ -142,7 +141,7 @@ select {
   border-radius: 2rem;
   padding: 0.6rem 1rem;
   width: 45%;
-  @include textstyle(1.2rem, white, null, null);
+  @include textstyle(1.2rem, white, null, null, null);
   &:hover {
     @include hoverr(0.85, 1);
   }
