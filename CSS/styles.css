@@ -47,6 +47,11 @@ h2 {
   padding: 10px 0px 10px 0px;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /*                                                 HEADER                                                        */
 .header {
   background-color: #70a288;
@@ -196,6 +201,17 @@ h2 {
   transform: scale(1.13);
 }
 
+.totop__icon {
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  width: 60px;
+  opacity: 70%;
+}
+.totop__icon:hover {
+  opacity: 100%;
+}
+
 /*                                             NOSOTROS                                              */
 .-description, .lola, .luisi, .axel {
   margin-left: auto;
@@ -280,7 +296,6 @@ h2 {
 
 /*                                                CONTACT                                               */
 .form {
-  border: none;
   line-height: 2.2rem;
   display: flex;
   flex-wrap: wrap;
@@ -295,17 +310,17 @@ h2 {
 
 input {
   border-radius: 2rem;
+  border: 2rem;
   font-family: "Quicksand";
   margin: 0.4rem;
-}
-input [type=text] {
-  border: 0.6rem solid;
+  color: white;
+  text-align: center;
   border-color: #476c9b;
   background-color: #476c9b;
-  color: white;
-  width: 90%;
 }
-input [type=text]::placeholder {
+input [type=text] {
+  border: 2rem solid;
+  width: 90%;
   color: white;
 }
 

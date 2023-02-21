@@ -18,6 +18,17 @@
   }
 }
 
+.totop__icon {
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  width: 60px;
+  opacity: 70%;
+  &:hover {
+    opacity: 100%;
+  }
+}
+
 /*                                             NOSOTROS                                              */
 .-description {
   margin-left: auto;
@@ -92,7 +103,6 @@
 /*                                                CONTACT                                               */
 
 .form {
-  border: none;
   line-height: 2.2rem;
   @include dflex(column, null, null);
   text-align: center;
@@ -103,17 +113,16 @@
 }
 input {
   border-radius: 2rem;
+  border: 2rem;
   font-family: "Quicksand";
   margin: 0.4rem;
+  @include textstyle(null, white, null, null, center);
+  border-color: $pastelblue;
+  background-color: $pastelblue;
   [type="text"] {
-    border: 0.6rem solid;
-    border-color: $pastelblue;
-    background-color: $pastelblue;
-    color: white;
+    border: 2rem solid;
     width: 90%;
-    &::placeholder {
-      color: white;
-    }
+    color: white;
   }
 }
 textarea {
