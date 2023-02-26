@@ -22,7 +22,7 @@
   position: fixed;
   right: 10px;
   bottom: 80px;
-  width: 60px;
+  width: 50px;
   opacity: 70%;
   &:hover {
     opacity: 100%;
@@ -108,7 +108,6 @@
   text-align: center;
 }
 .contact {
-  background-color: $contactcolor;
   padding: 2% 0% 3% 0%;
 }
 input {

@@ -204,7 +204,7 @@ html {
   position: fixed;
   right: 10px;
   bottom: 80px;
-  width: 60px;
+  width: 50px;
   opacity: 70%;
 }
 .totop__icon:hover {
@@ -303,7 +303,6 @@ html {
 }
 
 .contact {
-  background-color: #a0ca92;
   padding: 2% 0% 3% 0%;
 }
 
