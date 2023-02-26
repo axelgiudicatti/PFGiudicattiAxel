@@ -202,8 +202,8 @@ html {
 
 .totop__icon {
   position: fixed;
-  right: 10px;
-  bottom: 80px;
+  right: 4px;
+  bottom: 8px;
   width: 50px;
   opacity: 70%;
 }
@@ -211,6 +211,12 @@ html {
   opacity: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .totop__icon {
+    right: 10px;
+    bottom: 80px;
+  }
+}
 /*                                             NOSOTROS                                              */
 .-description, .lola, .luisi, .axel {
   margin-left: auto;
